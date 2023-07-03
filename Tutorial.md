@@ -95,6 +95,7 @@ Make sure that the IDE installation has been successfully completed first.
 Make sure that the latest version in the Releases category is selected and not the Nightly builds.
 2. Connect the micro-USB into your raspberry pi. Make sure to be careful when inserting it. 
 3. Now hold down the BOOTSEL button as you insert the other end of the cable into your computer USB.
+   
 ![BOOTSEL](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/bootsel.png)
 *<p style="text-align: center;">Fig.8. BOOTSEL Button</p>*
 4. Now you should see a new file storage in your file system named RPI-RP2, open it up and drag the uf2 file there.
@@ -102,7 +103,8 @@ Make sure that the latest version in the Releases category is selected and not t
 
 Now it is time to test the board. 
 Create a project in the Pymakr plugin by pressing the plus icon inside the extension. 
-Connect the Pico by pressing the lightning button next to the name.
+Connect the Pico by pressing the lightning button next to the name.  
+
 ![Lightning Button](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/lightning.png)
 *<p style="text-align: center;">Fig.9. Lightning Button.</p>*
 When that is done press the "create terminal" button.
@@ -129,7 +131,8 @@ After the Pico is connected it should look something like this.
 
 You can then go to your project files by pressing explorer, it is the top left button with two papers stacked on each other.
 
-If you are in the right folder it should look something like this except that you wont have all the files, the only file you should have is pymakr.conf.
+If you are in the right folder it should look something like this except that you wont have all the files, the only file you should have is pymakr.conf.  
+
 ![Explorer](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Explorer.png)
 *<p style="text-align: center;">Fig.13. File explorer.</p>*
 

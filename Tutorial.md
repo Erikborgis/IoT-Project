@@ -26,7 +26,7 @@ The summer gets hot in Sweden from time to time, and our apartments designed for
 
 ---
 
-![Pico WH](https://hackmd.io/_uploads/ByZpTJlF2.png)
+![Pico WH]([https://hackmd.io/_uploads/ByZpTJlF2.png](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Pico.png)
 *<p style="text-align: center;">Fig.1. Raspberry Pi Pico WH</p>*
 
 This is the Pico microcontroller used in this tutorial, it is a cheap microcontroller allowing you to make a ton of different projects. It has built in wireless network. But as we wanted to learn more about IoT we are using the LoRaWAN in this tutorial and not the built in wireless. 

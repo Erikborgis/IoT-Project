@@ -316,7 +316,7 @@ So on the dashboard the last reading of the temperature is shown in the top left
 ## Finalizing the design
 
 ![My connections](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/MyLayout.png)
-*<p style="text-align: center;">Fig.18. My connections.</p>*
+*<p style="text-align: center;">Fig.19. My connections.</p>*
 
 ---
 

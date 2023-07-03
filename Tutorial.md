@@ -307,6 +307,9 @@ It was fairly easy to create rules in Datacake as well, so creating an email ser
 
 ![Datacake Dashboard](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Dashboard.png)
 *<p style="text-align: center;">Fig.17. Dashboard on Datacake.</p>*
+  
+![Datacake Dashboard](https://hackmd.io/_uploads/BywsvFeF2.png)
+*<p style="text-align: center;">Fig.18. Dashboard blinds up on Datacake.</p>*
 
 So on the dashboard the last reading of the temperature is shown in the top left, just to the right of it we have the state of the blinds, in the future this will state if they have been rolled down or not by the software. We then have the temperature history, using this we may see if the temperature actually declines when the blinds are down. As of writing this report, they are pulled down. Just below that we have the humidity to the left and the amount of darkness, the lower the Darkness is the brighter it is. And the reason it is still bright is due to it standing behind the blinds.
 

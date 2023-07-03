@@ -26,22 +26,22 @@ The summer gets hot in Sweden from time to time, and our apartments designed for
 
 ---
 
-![Pico WH](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Pico.png)
+![Pico WH](https://hackmd.io/_uploads/ByZpTJlF2.png)
 *<p style="text-align: center;">Fig.1. Raspberry Pi Pico WH</p>*
 
 This is the Pico microcontroller used in this tutorial, it is a cheap microcontroller allowing you to make a ton of different projects. It has built in wireless network. But as we wanted to learn more about IoT we are using the LoRaWAN in this tutorial and not the built in wireless. 
 
-![Breadboard](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/breadBoard.png)
+![Breadboard](https://hackmd.io/_uploads/BkSp01gYh.png)
 *<p style="text-align: center;">Fig.2. Breadboard</p>*
 
 This is the board where everything will be connected.
 
-![LoRaWAN](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/LoRaWAN.png)
+![LoRaWAN](https://hackmd.io/_uploads/H1nQegeKh.png)
 *<p style="text-align: center;">Fig.3. LoRaWAN</p>*
 
 LoRaWAN is what we will use instead of the built in wireless. This is used for long range communication of small data. This project does not specifically need it as we will use it inside at all time, but it was used to learn more of IoT.
 
-![Temperature & Humidity](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/DH11.png)
+![Temperature & Humidity](https://hackmd.io/_uploads/rkgGMglY2.png)
 *<p style="text-align: center;">Fig.4. DHT11</p>*
 
 This is our temperature and humidity reader, it reads the surrounding areas temperature and humidity. 
@@ -50,7 +50,7 @@ The pin next to the S is the data pin, the middle is the power and the furthest 
 
 The use of DHT11 is solely for more data, as it comes with humidity, as we want to be able to see the current environment in the room as well. The project could be done with only a temperature reader as well, that does not include humidity.
 
-![Lightsensor](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/lightsensor.png)
+![Lightsensor](https://hackmd.io/_uploads/Hy4qMllY3.png)
 *<p style="text-align: center;">Fig.5. Photoresistor</p>*
 
 The photoresistor used to collect that brightness of the room, this to make sure that even if it might be to hot, we will not have the blinds down if it is dark outside.
@@ -74,14 +74,14 @@ Select the most current version.
 
 When the downloads are finished make sure to install both of the software. When the installation is complete launch VS Code and open up the extension tab.
 
-![VS Code Extension tab](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/VSCodeExstensionTab.png)
+![VS Code Extension tab](https://hackmd.io/_uploads/S1rOV-gt3.png)
 *<p style="text-align: center;">Fig.6. Extension tab VS Code</p>*
 
 The icon of the extension tab is displayed as purple.
 Install the Pymakr extension and restart VS Code.
 
 The Pymakr icon should now be displayed and available for you to open.
-![Pymakr icon](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Pymkr.png)
+![Pymakr icon](https://hackmd.io/_uploads/r1OJH-eY2.png)
 *<p style="text-align: center;">Fig.7. Pymakr VS Code</p>*
 
 ---
@@ -95,20 +95,18 @@ Make sure that the IDE installation has been successfully completed first.
 Make sure that the latest version in the Releases category is selected and not the Nightly builds.
 2. Connect the micro-USB into your raspberry pi. Make sure to be careful when inserting it. 
 3. Now hold down the BOOTSEL button as you insert the other end of the cable into your computer USB.
-   
-![BOOTSEL](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/bootsel.png)
+![BOOTSEL](https://hackmd.io/_uploads/BJF5uWgYh.png)
 *<p style="text-align: center;">Fig.8. BOOTSEL Button</p>*
 4. Now you should see a new file storage in your file system named RPI-RP2, open it up and drag the uf2 file there.
 5. Your board will disconnect automatically and then reconnect. Do not disconnect the device before the firmware installation is complete.
 
 Now it is time to test the board. 
 Create a project in the Pymakr plugin by pressing the plus icon inside the extension. 
-Connect the Pico by pressing the lightning button next to the name.  
-
-![Lightning Button](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/lightning.png)
+Connect the Pico by pressing the lightning button next to the name.
+![Lightning Button](https://hackmd.io/_uploads/H1CXcZlFn.png)
 *<p style="text-align: center;">Fig.9. Lightning Button.</p>*
 When that is done press the "create terminal" button.
-![Create Terminal](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Terminalbutton.png)
+![Create Terminal](https://hackmd.io/_uploads/H1On5ZgFn.png)
 *<p style="text-align: center;">Fig.10. Create Terminal Button.</p>*
 
 When that is done you should see >>> symbols in the terminal.
@@ -116,7 +114,7 @@ Type this in:
 ```micropython
 print("We are doing Erik Borgstrom's tutorial.")
 ```
-![Result of print](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/print.png)
+![Result of print](https://hackmd.io/_uploads/Sk9Ajbgt3.png)
 *<p style="text-align: center;">Fig.11. The result of the test.</p>*
 
 if as shown in the picture the text is printed back to you, you have successfully installed the IDE, Pymakr, Node js and updated the firmware on your microchip.
@@ -126,14 +124,13 @@ if as shown in the picture the text is printed back to you, you have successfull
 ### Uploading files
 Now it is time to upload files to your Pico.
 After the Pico is connected it should look something like this.
-![Pymakr](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/PymakrWithDevice.png)
+![Pymakr](https://hackmd.io/_uploads/S1rshWltn.png)
 *<p style="text-align: center;">Fig.12. Pymakr exstension with Pico connected.</p>*
 
 You can then go to your project files by pressing explorer, it is the top left button with two papers stacked on each other.
 
-If you are in the right folder it should look something like this except that you wont have all the files, the only file you should have is pymakr.conf.  
-
-![Explorer](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Explorer.png)
+If you are in the right folder it should look something like this except that you wont have all the files, the only file you should have is pymakr.conf.
+![Explorer](https://hackmd.io/_uploads/B1d8pWlKn.png)
 *<p style="text-align: center;">Fig.13. File explorer.</p>*
 
 Now create a file and call it main.py and paste this code
@@ -154,14 +151,14 @@ Notice that if you hover over the project name instead you have a button looking
 
 Let us start by familiarize ourselves with the layout of the Pico, this layout map will be used throughout this tutorial.
 
-![Pi Pico](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/PicoTemplate.png)
+![Pi Pico](https://hackmd.io/_uploads/BJMbVfxth.png)
 *<p style="text-align: center;">Fig.14. Pico Layout.</p>*
 
 ---
 
 ### Circuit
 
-![Circuit fritzed](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/CircuitBoard.png)
+![Circuit fritzed](https://hackmd.io/_uploads/Sy77XveK3.png)
 *<p style="text-align: center;">Fig.15. Circuit for this tutorial.</p>*
 
 The blue cables is the data cables, red is 3v3 and black is GND, the LoRaWAN will have one black, red, yellow and white cable, these should be connected as shown in the circuit diagram.
@@ -183,7 +180,6 @@ For this project I wanted to learn LorAWAN and ended up using [Helium](https://w
 :::danger
 The code is stored on my [github](https://github.com/Erikborgis/IoT-Project) and can be seen there. 
 :::
-
 There is 4 files:
 * main
 * lightsensor
@@ -304,17 +300,17 @@ The presentation is done in Datacake as it seemed like a simple widget to use, w
 
 It was fairly easy to create rules in Datacake as well, so creating an email service was not so hard. Datacake will send me an email once an hour reminding me if I need to pull up or down the blinds, seeing as it is not automated yet.
 
-![Email From Datacake](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Email.png)
+![Email From Datacake](https://hackmd.io/_uploads/SJJemPxFh.png)
 *<p style="text-align: center;">Fig.16. Email from Datacake.</p>*
 
-![Datacake Dashboard](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/Dashboard.png)
+![Datacake Dashboard](https://hackmd.io/_uploads/HJ6-wDgKh.png)
 *<p style="text-align: center;">Fig.17. Dashboard on Datacake.</p>*
 
 So on the dashboard the last reading of the temperature is shown in the top left, just to the right of it we have the state of the blinds, in the future this will state if they have been rolled down or not by the software. We then have the temperature history, using this we may see if the temperature actually declines when the blinds are down. As of writing this report, they are pulled down. Just below that we have the humidity to the left and the amount of darkness, the lower the Darkness is the brighter it is. And the reason it is still bright is due to it standing behind the blinds.
 
 ## Finalizing the design
 
-![My connections](https://github.com/Erikborgis/IoT-Project/blob/main/Pictures/MyLayout.png)
+![My connections](https://hackmd.io/_uploads/HyJBFDgK2.png)
 *<p style="text-align: center;">Fig.18. My connections.</p>*
 
 ---

@@ -180,7 +180,10 @@ For this project I wanted to learn LorAWAN and ended up using [Helium](https://w
 
 ## The code
 
+:::danger
 The code is stored on my [github](https://github.com/Erikborgis/IoT-Project) and can be seen there. 
+:::
+
 There is 4 files:
 * main
 * lightsensor

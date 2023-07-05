@@ -14,10 +14,10 @@ pinLightSensor = Pin(27)
 ldr = ADC(pinLightSensor)
 led = Pin("LED", Pin.OUT)
 
-# Helium
-DEV_EUI = "6081F9A322D168C7"
-APP_EUI = "6081F9AC4E762489"
-APP_KEY = "ACD5CA3941DD27F4CDCA786BFE575260"
+# Helium, write your Helium variables here.
+DEV_EUI = "xxxxxxxx"
+APP_EUI = "xxxxxxxx"
+APP_KEY = "xxxxxxxx"
 
 lora.configure(DEV_EUI, APP_EUI, APP_KEY)
 
